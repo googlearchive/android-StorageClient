@@ -9,4 +9,8 @@ categories:   [Content]
 languages:    [Java]
 solutions:    [Mobile]
 github:       android-StorageClient
+level:        INTERMEDIATE
+icon:         screenshots/icon-web.png
+apiRefs:
+    - android:android.content.Intent
 license: apache2
