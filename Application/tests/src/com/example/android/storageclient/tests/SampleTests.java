@@ -30,11 +30,11 @@
 */
 package com.example.android.storageclient.tests;
 
-import com.example.android.storageclient.*;
-
 import android.net.Uri;
-import android.support.v4.app.FragmentManager;
 import android.test.ActivityInstrumentationTestCase2;
+
+import com.example.android.storageclient.MainActivity;
+import com.example.android.storageclient.StorageClientFragment;
 
 /**
 * Tests for StorageClient sample.
@@ -76,6 +76,6 @@ public class SampleTests extends ActivityInstrumentationTestCase2<MainActivity> 
      */
     public void testDumpMetadataInvalidUri() {
         Uri uri = Uri.parse("content://HAHADOESNTEXIST");
-        mTestFragment.dumpImageMetaData(uri);
+        StorageClientFragment.ImageDialogFragment.dumpImageMetaData(mTestActivity, uri);
     }
 }
